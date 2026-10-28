@@ -3,6 +3,10 @@ services:
     runtime: static
     name: forge-28-octobre
     staticPublishPath: .
+    routes:
+      - type: redirect
+        source: /
+        destination: https://forge-saint-malo.fr/
     headers:
       - path: /*
         name: Cache-Control
